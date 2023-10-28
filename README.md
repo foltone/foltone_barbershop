@@ -18,6 +18,12 @@ This Barber Shop script for FiveM allows players to change the hairstyles, beard
 - User Interface with RageUI: The script is in RageUI.
 - Optimized to 0.00ms: The script is optimized to minimize resource usage and ensure optimal performance.
 
+### Dependencies
+- [es_extended](https://github.com/esx-framework/esx_core/tree/main/%5Bcore%5D/es_extended)
+- [esx_skin](https://github.com/esx-framework/esx_core/tree/main/%5Bcore%5D/esx_skin)
+- [skinchanger](https://github.com/esx-framework/esx_core/tree/main/%5Bcore%5D/skinchanger)
+- [oxmysql](https://github.com/overextended/oxmysql)
+
 ### Vidéo
 https://youtu.be/CFfSFCFDYDs
 

@@ -31,5 +31,7 @@ server_scripts {
 
 dependencies {
     "es_extended",
+    "esx_skin",
+    "skinchanger",
     "oxmysql"
 }
