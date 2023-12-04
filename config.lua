@@ -1,7 +1,7 @@
 Config = {
     Locale = "fr",
 
-    Price = 100,
+    Price = 75,
 
     BarberShopPositions = {
         vector3(-821.66, -186.88, 37.56),
@@ -15,7 +15,7 @@ Config = {
 
     Blip = {
         Sprite = 71,
-        Color = 1,
+        Color = 47,
         Scale = 0.8,
         Display = 4,
         Name = "Barber Shop"
