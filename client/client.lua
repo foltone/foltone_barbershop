@@ -206,8 +206,6 @@ local function getLists()
     generateList(0, beardsCount, beards)
     generateList(0, eyebrowsCount, eyebrows)
 end
-getLists()
-
 
 local open = false
 local function closeMenu()
@@ -338,6 +336,11 @@ local function startHairCut(coords, chair)
     end, chair)
 end
 CreateThread(function()
+    while ESX.PlayerData == nil do
+        Wait(0)
+    end
+    Wait(1000)
+    getLists()
     while true do
         local wait = 500
         local playerPed = PlayerPedId()
@@ -370,4 +373,9 @@ CreateThread(function()
         AddTextComponentString(Config.Blip.Name)
         EndTextCommandSetBlipName(blip)
     end
+end)
+
+RegisterNetEvent("esx:playerLoaded")
+AddEventHandler("esx:playerLoaded", function()
+    ESX.PlayerData = ESX.GetPlayerData()
 end)
