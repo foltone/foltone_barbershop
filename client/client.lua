@@ -330,6 +330,7 @@ local function startHairCut(coords, chair)
             cam = CreateCamInFrontOfHeadPlayer(newCoords, heading)
             ped = spawnPedHairdresser(newCoords, heading)
             sit = true
+            ClearPedProp(playerPed, 0)
             Wait(1000)
             DoScreenFadeIn(250)
         end
