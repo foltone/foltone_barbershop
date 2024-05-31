@@ -218,12 +218,12 @@ local function closeMenu()
         saveSkin()
         resetSkin = true
     end
-    hairIndex = 0
+    hairIndex = 1
     hairColors = {1,1, 0.0}
-    beardsIndex = 0
-    beardOpacity = 0
+    beardsIndex = 1
+    beardOpacity = 1
     breadColors = {1,1, 0.0}
-    eyebrowsIndex = 0
+    eyebrowsIndex = 1
     eyebrowsOpacity = 0.0
     eyebrowsColors = {1,1, 0.0}
     chairSelected = nil
