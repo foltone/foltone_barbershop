@@ -258,7 +258,7 @@ function RageUI.PoolMenus:FoltoneBarber()
                 TriggerEvent('skinchanger:change', "eyebrows_2", (eyebrowsOpacity * 10) + 0.0)
             end
         end)
-        Items:AddButton(_U("pay"), nil, { RightLabel = ">", IsDisabled = false, Color = { BackgroundColor = { 0, 130, 0, 155 } } }, function(onSelected)
+        Items:AddButton(_U("pay"), nil, { RightLabel = string.format("~g~%s$", Config.Price), IsDisabled = false, Color = { BackgroundColor = { 0, 130, 0, 155 } } }, function(onSelected)
             if (onSelected) then
                 ESX.TriggerServerCallback("foltone_barbershop:pay", function(paid)
                     if paid then
